@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieRental.Program</name>
+    </assembly>
+    <members>
+        <member name="T:MovieRental.Program.Initialize">
+            <summary>
+            Initialize class contains the consolemenu and its methods for the menu items.
+            </summary>
+        </member>
+        <member name="T:MovieRental.Program.RentFactory">
+            <summary>
+            RentFactory class creates the logics and repositories for the Program class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Program.RentFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Program.RentFactory"/> class.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Program.RentFactory.MovieLogic">
+            <summary>
+            Gets or sets the MovieLogic.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Program.RentFactory.RentLogic">
+            <summary>
+            Gets or sets the RentLogic.
+            </summary>
+        </member>
+    </members>
+</doc>

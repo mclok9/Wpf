@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieRental.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:MovieRental.Repository.IMovieRepository">
+            <summary>
+            Sets the methods for the MovieRepository class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.IMovieRepository.ChangeTitle(System.Int32,System.String)">
+            <summary>
+            Sets a new title for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="title">The title, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IMovieRepository.ChangeDistributor(System.Int32,System.String)">
+            <summary>
+            Sets a new distributor for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="distributor">The distributor, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IMovieRepository.ChangeCategory(System.Int32,System.String)">
+            <summary>
+            Sets a new category for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="category">The category, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IMovieRepository.ChangeLength(System.Int32,System.String)">
+            <summary>
+            Sets a new length for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="length">The length, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IMovieRepository.ChangeLanguage(System.Int32,System.String)">
+            <summary>
+            Sets a new language for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="language">The language, that gets the Movie entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.IRenterRepository">
+            <summary>
+            Sets the methods for the RenterRepository class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.IRenterRepository.ChangeName(System.Int32,System.String)">
+            <summary>
+            Sets a new name for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="name">The title, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRenterRepository.ChangePostcode(System.Int32,System.Int32)">
+            <summary>
+            Sets a new postcode for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="postcode">The postcode, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRenterRepository.ChangeCity(System.Int32,System.String)">
+            <summary>
+            Sets a new city for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="city">The city, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRenterRepository.ChangeStreet(System.Int32,System.String)">
+            <summary>
+            Sets a new street for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="street">The street, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRenterRepository.ChangeHouseNumber(System.Int32,System.String)">
+            <summary>
+            Sets a new house number for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="houseNumber">The house number, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRenterRepository.ChangeMembershipStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipStart">The start of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRenterRepository.ChangeMembershipEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipEnd">The end of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.IRentRepository">
+            <summary>
+            Sets the methods for the RentRepository class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.IRentRepository.ChangeOrder(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new order for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="order">The order, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRentRepository.ChangePrice(System.Int32,System.Int32)">
+            <summary>
+            Sets a new price for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="price">The price, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRentRepository.ChangeRentalStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalStart">The start of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRentRepository.ChangeRentalEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalEnd">The end of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRentRepository.ChangeOverrunFee(System.Int32,System.Int32)">
+            <summary>
+            Sets a new overrun fee for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="overrunFee">The overrun fee, that gets the Rent entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.IRepository`1">
+            <summary>
+            Sets the methods for the repositories.
+            </summary>
+            <typeparam name="T">Sets the T(generic type) for a repository.</typeparam>
+        </member>
+        <member name="M:MovieRental.Repository.IRepository`1.GetOne(System.Int32)">
+            <summary>
+            Gets one entity from a table.
+            </summary>
+            <param name="id">The id, which indicates the entity.</param>
+            <returns>A selected(generic) entity.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.IRepository`1.GetAll">
+            <summary>
+            Gets all of the entities from a table.
+            </summary>
+            <returns>A list of all the selected(generic) entities.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.IRepository`1.Create(`0)">
+            <summary>
+            Creates an entity for a table.
+            </summary>
+            <param name="entity">A selected(generic) entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IRepository`1.Delete(`0)">
+            <summary>
+            Deletes an entity from a table.
+            </summary>
+            <param name="entity">A selected(generic) entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.IStaffRepository">
+            <summary>
+            Sets the methods for the StaffRepository class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.IStaffRepository.ChangeDirector(System.Int32,System.String)">
+            <summary>
+            Sets a new director for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="director">The director, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IStaffRepository.ChangeMainCharacter(System.Int32,System.String)">
+            <summary>
+            Sets a new main character for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="mainCharacter">The main character, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IStaffRepository.ChangeSupportingCharacters(System.Int32,System.Int32)">
+            <summary>
+            Sets a new number of supporting characters for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="suportingCharacters">The supporting characters, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IStaffRepository.ChangeCost(System.Int32,System.Int32)">
+            <summary>
+            Sets a new cost for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="cost">The cost, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.IStaffRepository.ChangeStudio(System.Int32,System.String)">
+            <summary>
+            Sets a new studio for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="studio">The studio, that gets the Staff entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.MainRepository`1">
+            <summary>
+            The main repository, which sets the methods for the repositories.
+            </summary>
+            <typeparam name="T">T is a generic type, must be a class.</typeparam>
+        </member>
+        <member name="M:MovieRental.Repository.MainRepository`1.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Repository.MainRepository`1"/> class.
+            </summary>
+            <param name="ctx">The ctx represents the database.</param>
+        </member>
+        <member name="P:MovieRental.Repository.MainRepository`1.Ctx">
+            <summary>
+            Gets or sets the database.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.MainRepository`1.GetOne(System.Int32)">
+            <summary>
+            Gets an entity from a table.
+            </summary>
+            <param name="id">The id, which indicates the entity.</param>
+            <returns>A selected(generic) entity.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.MainRepository`1.GetAll">
+            <summary>
+            Gets all of the entities from a table.
+            </summary>
+            <returns>A list of all the selected(generic) entities.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.MainRepository`1.Create(`0)">
+            <summary>
+            Creates an entity for a table.
+            </summary>
+            <param name="entity">A selected(generic) entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.MainRepository`1.Delete(`0)">
+            <summary>
+            Deletes an entity from a table.
+            </summary>
+            <param name="entity">A selected(generic) entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.MovieRepository">
+            <summary>
+            The movie repository, which sets the methods for the Movie table.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.MovieRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Repository.MovieRepository"/> class.
+            </summary>
+            <param name="ctx">The ctx represents the database.</param>
+        </member>
+        <member name="M:MovieRental.Repository.MovieRepository.GetOne(System.Int32)">
+            <summary>
+            Gets a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <returns>A selected Movie entity.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.MovieRepository.ChangeTitle(System.Int32,System.String)">
+            <summary>
+            Sets a new title for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="title">The title, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.MovieRepository.ChangeDistributor(System.Int32,System.String)">
+            <summary>
+            Sets a new distributor for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="distributor">The distributor, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.MovieRepository.ChangeCategory(System.Int32,System.String)">
+            <summary>
+            Sets a new category for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="category">The category, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.MovieRepository.ChangeLength(System.Int32,System.String)">
+            <summary>
+            Sets a new length for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="length">The length, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.MovieRepository.ChangeLanguage(System.Int32,System.String)">
+            <summary>
+            Sets a new language for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="language">The language, that gets the Movie entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.RenterRepository">
+            <summary>
+            The renter repository, which sets the methods for the Renter table.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Repository.RenterRepository"/> class.
+            </summary>
+            <param name="ctx">The ctx represents the database.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.GetOne(System.Int32)">
+            <summary>
+            Gets a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <returns>A selected Renter entity.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.ChangeName(System.Int32,System.String)">
+            <summary>
+            Sets a new name for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="name">The title, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.ChangePostcode(System.Int32,System.Int32)">
+            <summary>
+            Sets a new postcode for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="postcode">The postcode, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.ChangeCity(System.Int32,System.String)">
+            <summary>
+            Sets a new city for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="city">The city, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.ChangeStreet(System.Int32,System.String)">
+            <summary>
+            Sets a new street for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="street">The street, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.ChangeHouseNumber(System.Int32,System.String)">
+            <summary>
+            Sets a new house number for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="houseNumber">The house number, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.ChangeMembershipStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipStart">The start of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RenterRepository.ChangeMembershipEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipEnd">The end of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.RentRepository">
+            <summary>
+            The rent repository, which sets the methods for the Rent table.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.RentRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Repository.RentRepository"/> class.
+            </summary>
+            <param name="ctx">The ctx represents the database.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RentRepository.GetOne(System.Int32)">
+            <summary>
+            Gets a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <returns>A selected Rent entity.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.RentRepository.ChangeOrder(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new order for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="order">The order, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RentRepository.ChangePrice(System.Int32,System.Int32)">
+            <summary>
+            Sets a new price for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="price">The price, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RentRepository.ChangeRentalStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalStart">The start of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RentRepository.ChangeRentalEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalEnd">The end of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.RentRepository.ChangeOverrunFee(System.Int32,System.Int32)">
+            <summary>
+            Sets a new overrun fee for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="overrunFee">The overrun fee, that gets the Rent entity.</param>
+        </member>
+        <member name="T:MovieRental.Repository.StaffRepository">
+            <summary>
+            The staff repository, which sets the methods for the Staff table.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Repository.StaffRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Repository.StaffRepository"/> class.
+            </summary>
+            <param name="ctx">The ctx represents the database.</param>
+        </member>
+        <member name="M:MovieRental.Repository.StaffRepository.GetOne(System.Int32)">
+            <summary>
+            Gets a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <returns>A selected Staff entity.</returns>
+        </member>
+        <member name="M:MovieRental.Repository.StaffRepository.ChangeDirector(System.Int32,System.String)">
+            <summary>
+            Sets a new director for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="director">The director, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.StaffRepository.ChangeMainCharacter(System.Int32,System.String)">
+            <summary>
+            Sets a new main character for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="mainCharacter">The main character, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.StaffRepository.ChangeSupportingCharacters(System.Int32,System.Int32)">
+            <summary>
+            Sets a new number of supporting characters for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="supportingCharacters">The supporting characters, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.StaffRepository.ChangeCost(System.Int32,System.Int32)">
+            <summary>
+            Sets a new cost for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="cost">The cost, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Repository.StaffRepository.ChangeStudio(System.Int32,System.String)">
+            <summary>
+            Sets a new studio for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="studio">The studio, that gets the Staff entity.</param>
+        </member>
+    </members>
+</doc>

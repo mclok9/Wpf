@@ -1,0 +1,766 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieRental.Logic</name>
+    </assembly>
+    <members>
+        <member name="T:MovieRental.Logic.IMovieLogic">
+            <summary>
+            Sets the methods for the MovieLogic class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.GetOneMovie(System.Int32)">
+            <summary>
+            Gets a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <returns>A selected Movie entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.GetOneStaff(System.Int32)">
+            <summary>
+            Gets a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <returns>A selected Staff entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.GetAllMovies">
+            <summary>
+            Gets all of the Movie entities.
+            </summary>
+            <returns>A list of all the Movie entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.GetAllStaffs">
+            <summary>
+            Gets all of the Staff entities.
+            </summary>
+            <returns>A list of all the Staff entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeMovieTitle(System.Int32,System.String)">
+            <summary>
+            Sets a new title for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="title">The title, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeMovieDistributor(System.Int32,System.String)">
+            <summary>
+            Sets a new dsitributor for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="distributor">The distributor, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeMovieCategory(System.Int32,System.String)">
+            <summary>
+            Sets a new category for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="category">The category, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeMovieLength(System.Int32,System.String)">
+            <summary>
+            Sets a new length for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="length">The length, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeMovieLanguage(System.Int32,System.String)">
+            <summary>
+            Sets a new language for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="language">The language, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeStaffDirector(System.Int32,System.String)">
+            <summary>
+            Sets a new director for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="director">The director, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeStaffMainCharacter(System.Int32,System.String)">
+            <summary>
+            Sets a new main character for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="mainCharacter">The main character, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeStaffSupportingCharacters(System.Int32,System.Int32)">
+            <summary>
+            Sets a new number of supporting characters for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="suportingCharacters">The supporting characters, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeStaffCost(System.Int32,System.Int32)">
+            <summary>
+            Sets a new cost for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="cost">The cost, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.ChangeStaffStudio(System.Int32,System.String)">
+            <summary>
+            Sets a new studio for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="studio">The studio, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.DeleteMovie(System.Int32)">
+            <summary>
+            Deletes a Movie entity.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.DeleteStaff(System.Int32)">
+            <summary>
+            Deletes a Staff entity.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.CreateMovie(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Creates a Movie entity.
+            </summary>
+            <param name="title">The title, that gets the Movie entity.</param>
+            <param name="distributor">The distributor, that gets the Movie entity.</param>
+            <param name="category">The category, that gets the Movie entity.</param>
+            <param name="length">The length, that gets the Movie entity.</param>
+            <param name="language">The language, that gets the Movie entity.</param>
+            <param name="rentId">The rentId, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.CreateStaff(System.String,System.String,System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            Creates a Staff entity.
+            </summary>
+            <param name="director">The director, that gets the Staff entity.</param>
+            <param name="mainCharacter">The main character, that gets the Staff entity.</param>
+            <param name="supportingCharacters">The supporting characters, that gets the Staff entity.</param>
+            <param name="cost">The cost, that gets the Staff entity.</param>
+            <param name="studio">The studio, that gets the Staff entity.</param>
+            <param name="movieId">The movieId, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.AverageCost">
+            <summary>
+            Listing the average cost of movies grouped by categories.
+            </summary>
+            <returns>A list of average costs.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.SumCharacternumber">
+            <summary>
+            Listing the sum of supporting characters grouped by distributors.
+            </summary>
+            <returns>A list of sum of supporting characters.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.AverageCostAsync">
+            <summary>
+            Async task: listing the average cost of movies grouped by categories.
+            </summary>
+            <returns>Average costs list in task.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IMovieLogic.SumCharacternumberAsync">
+            <summary>
+            Async task: listing the sum of supporting characters grouped by distributors.
+            </summary>
+            <returns>Sum of supporting characters list in task.</returns>
+        </member>
+        <member name="T:MovieRental.Logic.IRentLogic">
+            <summary>
+            Sets the methods for the RentLogic class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.GetOneRent(System.Int32)">
+            <summary>
+            Gets a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <returns>A selected Rent entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.GetOneRenter(System.Int32)">
+            <summary>
+            Gets a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <returns>A selected Renter entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.GetAllRents">
+            <summary>
+            Gets all of the Rent entities.
+            </summary>
+            <returns>A list of all the Rent entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.GetAllRenters">
+            <summary>
+            Gets all of the Renter entities.
+            </summary>
+            <returns>A list of all the Renter entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRentOrder(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new order for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="order">The order, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRentPrice(System.Int32,System.Int32)">
+            <summary>
+            Sets a new price for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="price">The price, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRentRentalStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalStart">The start of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRentRentalEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalEnd">The end of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRentOverrunFee(System.Int32,System.Int32)">
+            <summary>
+            Sets a new overrun fee for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="overrunFee">The overrun fee, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRenterName(System.Int32,System.String)">
+            <summary>
+            Sets a new name for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="name">The name, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRenterPostcode(System.Int32,System.Int32)">
+            <summary>
+            Sets a new postcode for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="postcode">The postcode, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRenterCity(System.Int32,System.String)">
+            <summary>
+            Sets a new city for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="city">The city, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRenterStreet(System.Int32,System.String)">
+            <summary>
+            Sets a new street for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="street">The street, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRenterHouseNumber(System.Int32,System.String)">
+            <summary>
+            Sets a new house number for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="houseNumber">The house number, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRenterMembershipStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipStart">The start of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.ChangeRenterMembershipEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipEnd">The end of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.DeleteRent(System.Int32)">
+            <summary>
+            Deletes a Rent entity.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.DeleteRenter(System.Int32)">
+            <summary>
+            Deletes a Renter entity.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.CreateRent(System.DateTime,System.Int32,System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Creates a Rent entity.
+            </summary>
+            <param name="order">The order, that gets the Rent entity.</param>
+            <param name="price">The price, that gets the Rent entity.</param>
+            <param name="rentalStart">The start of the rental, that gets the Rent entity.</param>
+            <param name="rentalEnd">The end of the rental, that gets the Rent entity.</param>
+            <param name="overrunFee">The overrun fee, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.CreateRenter(System.String,System.Int32,System.String,System.String,System.String,System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Creates a Renter entity.
+            </summary>
+            <param name="name">The name, that gets the Renter entity.</param>
+            <param name="postcode">The postcode, that gets the Renter entity.</param>
+            <param name="city">The city, that gets the Renter entity.</param>
+            <param name="street">The street, that gets the Renter entity.</param>
+            <param name="houseNumber">The house number, that gets the Renter entity.</param>
+            <param name="membershipStart">The start of the membership, that gets the Renter entity.</param>
+            <param name="membershipEnd">The end of the membership, that gets the Renter entity.</param>
+            <param name="rentId">The rentId, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.SumPrice">
+            <summary>
+            Listing the sum of prices grouped by cities.
+            </summary>
+            <returns>A list of sum of prices.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.IRentLogic.SumPriceAsync">
+            <summary>
+            Async task: listing the sum of prices grouped by cities.
+            </summary>
+            <returns>Sum of prices list in task.</returns>
+        </member>
+        <member name="T:MovieRental.Logic.MovieAverageCost">
+            <summary>
+            Class for movies' average costs grouped by categories.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Logic.MovieAverageCost.Category">
+            <summary>
+            Gets or sets the category of the movie.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Logic.MovieAverageCost.Cost">
+            <summary>
+            Gets or sets the average cost of the movie.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.MovieAverageCost.ToString">
+            <summary>
+            Overriding the ToString method.
+            </summary>
+            <returns>The string of a MovieAverageCost entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieAverageCost.Equals(System.Object)">
+            <summary>
+            Overriding the Equals method.
+            </summary>
+            <param name="obj">The object, what to check if it is from MovieAverageCost class.</param>
+            <returns>True, if the object is equal with MovieAverageCost class.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieAverageCost.GetHashCode">
+            <summary>
+            Overriding the GetHashCode method.
+            </summary>
+            <returns>The actual object's cost.</returns>
+        </member>
+        <member name="T:MovieRental.Logic.MovieLogic">
+            <summary>
+            Movie Logic contains the methods for the Movie and Staff repository.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.#ctor(MovieRental.Repository.IMovieRepository,MovieRental.Repository.IStaffRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Logic.MovieLogic"/> class.
+            </summary>
+            <param name="movieRepository">A Movie repository entity.</param>
+            <param name="staffRepository">A Staff repository entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.GetOneMovie(System.Int32)">
+            <summary>
+            Gets a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <returns>A selected Movie entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.GetOneStaff(System.Int32)">
+            <summary>
+            Gets a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <returns>A selected Staff entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.GetAllMovies">
+            <summary>
+            Gets all of the Movie entities.
+            </summary>
+            <returns>A list of all the Movie entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.GetAllStaffs">
+            <summary>
+            Gets all of the Staff entities.
+            </summary>
+            <returns>A list of all the Staff entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeMovieTitle(System.Int32,System.String)">
+            <summary>
+            Sets a new title for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="title">The title, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeMovieDistributor(System.Int32,System.String)">
+            <summary>
+            Sets a new distributor for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="distributor">The distributor, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeMovieCategory(System.Int32,System.String)">
+            <summary>
+            Sets a new category for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="category">The category, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeMovieLength(System.Int32,System.String)">
+            <summary>
+            Sets a new length for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="length">The length, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeMovieLanguage(System.Int32,System.String)">
+            <summary>
+            Sets a new language for a Movie entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+            <param name="language">The language, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeStaffDirector(System.Int32,System.String)">
+            <summary>
+            Sets a new director for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="director">The director, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeStaffMainCharacter(System.Int32,System.String)">
+            <summary>
+            Sets a new main character for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="mainCharacter">The main character, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeStaffSupportingCharacters(System.Int32,System.Int32)">
+            <summary>
+            Sets a new number of supporting characters for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="suportingCharacters">The supporting characters, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeStaffCost(System.Int32,System.Int32)">
+            <summary>
+            Sets a new cost for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="cost">The cost, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.ChangeStaffStudio(System.Int32,System.String)">
+            <summary>
+            Sets a new studio for a Staff entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+            <param name="studio">The studio, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.DeleteMovie(System.Int32)">
+            <summary>
+            Deletes a Movie entity.
+            </summary>
+            <param name="id">The id, which indicates the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.DeleteStaff(System.Int32)">
+            <summary>
+            Deletes a Staff entity.
+            </summary>
+            <param name="id">The id, which indicates the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.CreateMovie(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Creates a Movie entity.
+            </summary>
+            <param name="title">The title, that gets the Movie entity.</param>
+            <param name="distributor">The distributor, that gets the Movie entity.</param>
+            <param name="category">The category, that gets the Movie entity.</param>
+            <param name="length">The length, that gets the Movie entity.</param>
+            <param name="language">The language, that gets the Movie entity.</param>
+            <param name="rentId">The rentId, that gets the Movie entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.CreateStaff(System.String,System.String,System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            Creates a Staff entity.
+            </summary>
+            <param name="director">The director, that gets the Staff entity.</param>
+            <param name="mainCharacter">The main character, that gets the Staff entity.</param>
+            <param name="supportingCharacters">The supporting characters, that gets the Staff entity.</param>
+            <param name="cost">The cost, that gets the Staff entity.</param>
+            <param name="studio">The studio, that gets the Staff entity.</param>
+            <param name="movieId">The movieId, that gets the Staff entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.AverageCost">
+            <summary>
+            Listing the average cost of movies grouped by categories.
+            </summary>
+            <returns>A list of average costs.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.SumCharacternumber">
+            <summary>
+            Listing the sum of supporting characters grouped by distributors.
+            </summary>
+            <returns>A list of sum of supporting characters.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.AverageCostAsync">
+            <summary>
+            Async task: listing the average cost of movies grouped by categories.
+            </summary>
+            <returns>Average costs list in task.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieLogic.SumCharacternumberAsync">
+            <summary>
+            Async task: listing the sum of supporting characters grouped by distributors.
+            </summary>
+            <returns>Sum of supporting characters list in task.</returns>
+        </member>
+        <member name="T:MovieRental.Logic.MovieSumCharacternumber">
+            <summary>
+            Class for movies' sum of supporting characters grouped by distributors.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Logic.MovieSumCharacternumber.Distributor">
+            <summary>
+            Gets or sets the distributor of the movie.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Logic.MovieSumCharacternumber.SupportingCharacters">
+            <summary>
+            Gets or sets the the sum of supporting characters of the movie.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.MovieSumCharacternumber.ToString">
+            <summary>
+            Overriding the ToString method.
+            </summary>
+            <returns>The string of a MovieSumCharacternumber entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieSumCharacternumber.Equals(System.Object)">
+            <summary>
+            Overriding the Equals method.
+            </summary>
+            <param name="obj">The object, what to check if it is from MovieSumCharacternumber class.</param>
+            <returns>True, if the object is equal with MovieSumCharacternumber class.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.MovieSumCharacternumber.GetHashCode">
+            <summary>
+            Overriding the GetHashCode method.
+            </summary>
+            <returns>The actual object's number of supporting characters.</returns>
+        </member>
+        <member name="T:MovieRental.Logic.RenterSumPrice">
+            <summary>
+            Class for the renter's sum of prices grouped by cities.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Logic.RenterSumPrice.City">
+            <summary>
+            Gets or sets the city of a renter.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Logic.RenterSumPrice.Price">
+            <summary>
+            Gets or sets the sum of prices of a renter.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.RenterSumPrice.ToString">
+            <summary>
+            Overriding the ToString method.
+            </summary>
+            <returns>The string of a RenterSumPrice entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.RenterSumPrice.Equals(System.Object)">
+            <summary>
+            Overriding the Equals method.
+            </summary>
+            <param name="obj">The object, what to check if it is from RenterSumPrice class.</param>
+            <returns>True, if the object is equal with RenterSumPrice class.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.RenterSumPrice.GetHashCode">
+            <summary>
+            Overriding the GetHashCode method.
+            </summary>
+            <returns>The actual object's price.</returns>
+        </member>
+        <member name="T:MovieRental.Logic.RentLogic">
+            <summary>
+            Rent Logic contains the methods for the Rent and Renter repository.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.#ctor(MovieRental.Repository.IRentRepository,MovieRental.Repository.IRenterRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Logic.RentLogic"/> class.
+            </summary>
+            <param name="rentRepository">A Rent repository entity.</param>
+            <param name="renterRepository">A Renter repository entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.GetOneRent(System.Int32)">
+            <summary>
+            Gets a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <returns>A selected Rent entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.GetOneRenter(System.Int32)">
+            <summary>
+            Gets a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <returns>A selected Renter entity.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.GetAllRents">
+            <summary>
+            Gets all of the Rent entities.
+            </summary>
+            <returns>A list of all the Rent entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.GetAllRenters">
+            <summary>
+            Gets all of the Renter entities.
+            </summary>
+            <returns>A list of all the Renter entities.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRentOrder(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new order for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="order">The order, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRentPrice(System.Int32,System.Int32)">
+            <summary>
+            Sets a new price for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="price">The price, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRentRentalStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalStart">The start of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRentRentalEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the rental for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="rentalEnd">The end of the rental, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRentOverrunFee(System.Int32,System.Int32)">
+            <summary>
+            Sets a new overrun fee for a Rent entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+            <param name="overrunFee">The overrun fee, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRenterName(System.Int32,System.String)">
+            <summary>
+            Sets a new name for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="name">The name, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRenterPostcode(System.Int32,System.Int32)">
+            <summary>
+            Sets a new postcode for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="postcode">The postcode, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRenterCity(System.Int32,System.String)">
+            <summary>
+            Sets a new city for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="city">The city, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRenterStreet(System.Int32,System.String)">
+            <summary>
+            Sets a new street for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="street">The street, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRenterHouseNumber(System.Int32,System.String)">
+            <summary>
+            Sets a new house number for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="houseNumber">The house number, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRenterMembershipStart(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new start of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipStart">The start of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.ChangeRenterMembershipEnd(System.Int32,System.DateTime)">
+            <summary>
+            Sets a new end of the membership for a Renter entity by id.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+            <param name="membershipEnd">The end of the membership, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.DeleteRent(System.Int32)">
+            <summary>
+            Deletes a Rent entity.
+            </summary>
+            <param name="id">The id, which indicates the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.DeleteRenter(System.Int32)">
+            <summary>
+            Deletes a Renter entity.
+            </summary>
+            <param name="id">The id, which indicates the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.CreateRent(System.DateTime,System.Int32,System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Creates a Rent entity.
+            </summary>
+            <param name="order">The order, that gets the Rent entity.</param>
+            <param name="price">The price, that gets the Rent entity.</param>
+            <param name="rentalStart">The start of the rental, that gets the Rent entity.</param>
+            <param name="rentalEnd">The end of the rental, that gets the Rent entity.</param>
+            <param name="overrunFee">The overrun fee, that gets the Rent entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.CreateRenter(System.String,System.Int32,System.String,System.String,System.String,System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Creates a Renter entity.
+            </summary>
+            <param name="name">The name, that gets the Renter entity.</param>
+            <param name="postcode">The postcode, that gets the Renter entity.</param>
+            <param name="city">The city, that gets the Renter entity.</param>
+            <param name="street">The street, that gets the Renter entity.</param>
+            <param name="houseNumber">The house number, that gets the Renter entity.</param>
+            <param name="membershipStart">The start of the membership, that gets the Renter entity.</param>
+            <param name="membershipEnd">The end of the membership, that gets the Renter entity.</param>
+            <param name="rentId">The rentId, that gets the Renter entity.</param>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.SumPrice">
+            <summary>
+            Listing the sum of prices grouped by cities.
+            </summary>
+            <returns>A list of sum of prices.</returns>
+        </member>
+        <member name="M:MovieRental.Logic.RentLogic.SumPriceAsync">
+            <summary>
+            Async task: listing the sum of prices grouped by cities.
+            </summary>
+            <returns>Sum of prices list in task.</returns>
+        </member>
+    </members>
+</doc>

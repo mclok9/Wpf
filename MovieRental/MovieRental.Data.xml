@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieRental.Data</name>
+    </assembly>
+    <members>
+        <member name="T:MovieRental.Data.Movie">
+            <summary>
+            Movie class of the DataModel.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.Movie.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Data.Movie"/> class.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.MovieId">
+            <summary>
+            Gets or sets the id of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.Title">
+            <summary>
+            Gets or sets the title of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.Distributor">
+            <summary>
+            Gets or sets the distributor of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.Category">
+            <summary>
+            Gets or sets the categoy of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.Length">
+            <summary>
+            Gets or sets the length of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.Language">
+            <summary>
+            Gets or sets the language of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.Staffs">
+            <summary>
+            Gets the collection of staffs of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.Rent">
+            <summary>
+            Gets or sets the Rent of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.RentId">
+            <summary>
+            Gets or sets the rentId(foreign key) of a Movie entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Movie.MainData">
+            <summary>
+            Gets the mainData of a Movie entity.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.Movie.ToString">
+            <summary>
+            Overriding the ToString method.
+            </summary>
+            <returns>The string of a Movie entity.</returns>
+        </member>
+        <member name="T:MovieRental.Data.Rent">
+            <summary>
+            Rent class of the DataModel.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.Rent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Data.Rent"/> class.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.RentId">
+            <summary>
+            Gets or sets the id of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.Order">
+            <summary>
+            Gets or sets the order of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.Price">
+            <summary>
+            Gets or sets the price of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.RentalStart">
+            <summary>
+            Gets or sets the start of the rental of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.RentalEnd">
+            <summary>
+            Gets or sets the end of the rental of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.OverrunFee">
+            <summary>
+            Gets or sets the overrun fee of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.Renters">
+            <summary>
+            Gets the collection of renters of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.Movies">
+            <summary>
+            Gets the collection of movies of a Rent entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Rent.MainData">
+            <summary>
+            Gets the mainData of a Rent entity.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.Rent.ToString">
+            <summary>
+            Overriding the ToString method.
+            </summary>
+            <returns>The string of a Rent entity.</returns>
+        </member>
+        <member name="T:MovieRental.Data.RentContext">
+            <summary>
+            RentContext class creates the relationships between the tables.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.RentContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Data.RentContext"/> class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.RentContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{MovieRental.Data.RentContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:MovieRental.Data.RentContext"/> class.
+            </summary>
+            <param name="options">DbContextOptions from the ancient class.</param>
+        </member>
+        <member name="P:MovieRental.Data.RentContext.Movies">
+            <summary>
+            Gets or sets the Movies table of the RentContext class.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.RentContext.Rents">
+            <summary>
+            Gets or sets the Rents table of the RentContext class.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.RentContext.Renters">
+            <summary>
+            Gets or sets the Renters table of the RentContext class.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.RentContext.Staffs">
+            <summary>
+            Gets or sets the Staffs table of the RentContext class.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.RentContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Configures the database from the connection string.
+            </summary>
+            <param name="optionsBuilder">Gets the DbContextOptions.</param>
+        </member>
+        <member name="M:MovieRental.Data.RentContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Creates the model for the database and fills the tables with entities and datas.
+            </summary>
+            <param name="modelBuilder">Gets the ModelBuilder.</param>
+        </member>
+        <member name="T:MovieRental.Data.Renter">
+            <summary>
+            Renter class of the DataModel.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.RenterId">
+            <summary>
+            Gets or sets the id of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.Name">
+            <summary>
+            Gets or sets the name of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.Postcode">
+            <summary>
+            Gets or sets the postcode of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.City">
+            <summary>
+            Gets or sets the city of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.Street">
+            <summary>
+            Gets or sets the street of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.HouseNumber">
+            <summary>
+            Gets or sets the house number of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.MembershipStart">
+            <summary>
+            Gets or sets the start of the membership of a Rental entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.MembershipEnd">
+            <summary>
+            Gets or sets the end of the membership of a Rental entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.Rent">
+            <summary>
+            Gets or sets the Rent of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.RentId">
+            <summary>
+            Gets or sets the rentId(foreign key) of a Renter entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Renter.MainData">
+            <summary>
+            Gets the mainData of a Renter entity.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.Renter.ToString">
+            <summary>
+            Overriding the ToString method.
+            </summary>
+            <returns>The string of a Renter entity.</returns>
+        </member>
+        <member name="T:MovieRental.Data.Staff">
+            <summary>
+            Staff class of the DataModel.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.StaffId">
+            <summary>
+            Gets or sets the id of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.Director">
+            <summary>
+            Gets or sets the director of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.MainCharacter">
+            <summary>
+            Gets or sets the main character of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.SupportingCharacters">
+            <summary>
+            Gets or sets the supporting characters of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.Cost">
+            <summary>
+            Gets or sets the cost of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.Studio">
+            <summary>
+            Gets or sets the studio of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.Movie">
+            <summary>
+            Gets or sets the Movie of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.MovieId">
+            <summary>
+            Gets or sets the movieId(foreign key) of a Staff entity.
+            </summary>
+        </member>
+        <member name="P:MovieRental.Data.Staff.MainData">
+            <summary>
+            Gets the mainData of a Staff entity.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Data.Staff.ToString">
+            <summary>
+            Overriding a ToString method.
+            </summary>
+            <returns>A string of a Staff entity.</returns>
+        </member>
+        <member name="T:MovieRental.Data.ToStringAttribute">
+            <summary>
+            ToStringAttribute using on properites.
+            </summary>
+        </member>
+    </members>
+</doc>

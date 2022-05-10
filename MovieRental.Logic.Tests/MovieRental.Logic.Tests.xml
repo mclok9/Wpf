@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieRental.Logic.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:MovieRental.Logic.Tests.MovieLogicTests">
+            <summary>
+            Class contains the MovieLogic for CRUD and non-CRUD logic tests.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.MovieLogicTests.TestGetOneMovie(System.Int32)">
+            <summary>
+            Testing the working of GetOneMovie(int id) method.
+            </summary>
+            <param name="id">Adding the id to the mockedMovieRepository.</param>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.MovieLogicTests.TestGetAllMovies">
+            <summary>
+            Testing the working of GetAllMovies() method.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.MovieLogicTests.TestDeleteMovie(System.Int32)">
+            <summary>
+            Testing the working of DeleteMovie(int id) method.
+            </summary>
+            <param name="id">Adding the id to the mockedMovieRepository.</param>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.MovieLogicTests.TestDeleteMovieWrongId(System.Int32)">
+            <summary>
+            Testing the working of DeleteMovie(int id) method with a wrong id.
+            </summary>
+            <param name="id">Adding the id to the mockedMovieRepository.</param>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.MovieLogicTests.TestMovieAverageCost">
+            <summary>
+            Testing the working of AverageCost() method.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.MovieLogicTests.TestMovieSumCharacterNumber">
+            <summary>
+            Testing the working of SumCharacterNumber() method.
+            </summary>
+        </member>
+        <member name="T:MovieRental.Logic.Tests.RentLogicTests">
+            <summary>
+            Class contains the RentLogic for CRUD and non-CRUD logic tests.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.RentLogicTests.TestGetOneRent(System.Int32)">
+            <summary>
+            Testing the working of GetOneRent(int id) method.
+            </summary>
+            <param name="id">Adding the id to the mockedRentRepository.</param>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.RentLogicTests.TestGetAllRents">
+            <summary>
+            Testing the working of GetAllRents() method.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.RentLogicTests.TestDeleteRent(System.Int32)">
+            <summary>
+            Testing the working of DeleteRent(int id) method.
+            </summary>
+            <param name="id">Adding the id to the mockedRentRepository.</param>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.RentLogicTests.TestDeleteRentWrongId(System.Int32)">
+            <summary>
+            Testing the working of DeleteRent(int id) method with a wrong id.
+            </summary>
+            <param name="id">Adding the id to the mockedRentRepository.</param>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.RentLogicTests.TestCreateRent">
+            <summary>
+            Testing the working of CreateRent(DateTime order, int price, DateTime rentalStart, DateTime rentalEnd, int overrunFee) method.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.RentLogicTests.TestCreateRentExistingEntity">
+            <summary>
+            Testing the working of CreateRent(DateTime order, int price, DateTime rentalStart, DateTime rentalEnd, int overrunFee) method with an existing entity.
+            </summary>
+        </member>
+        <member name="M:MovieRental.Logic.Tests.RentLogicTests.TestRenterSumPrice">
+            <summary>
+            Testing the working of SumPrice() method.
+            </summary>
+        </member>
+    </members>
+</doc>
